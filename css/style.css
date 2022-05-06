@@ -1,0 +1,40 @@
+.startbild{
+    height: auto;
+    width: 1440px;
+}
+.navbarmitte{
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+  
+
+}
+.bg-img{
+    background-image: url("../img/startbild.webp");
+    min-height: 380px;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    /* Needed to position the navbar */
+    position: relative;
+}
+.container{
+    display: flex;
+    justify-items: right;
+  position: fixed;
+  margin: 20px;
+  opacity: 0,2;
+  
+}
+
+.nav-link{
+    color: black !important;
+
+}
+.nav-link:hover{
+    color: #6f8f36 !important;
+
+}
