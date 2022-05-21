@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+      <!-- HEAD, HEADER und FOOTER werden aus anderem File importiert -->
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script> 
+        $(function(){
+        // IMPORT DER FILES
+        $("#head").load("../html/html_tags/head.html"); 
+        $("#header").load("../html/html_tags/header.html"); 
+        $("#footer").load("../html/html_tags/footer.html"); 
+    });
+    </script>
+
+    <!-- HEAD.html wird importiert -->
+    <div id="head"></div>
+  </head>
+
+  <body>
+
+    <header class="header">
+        <!-- HEADER.html wird importiert -->
+        <div id="header"></div>
+    </header>
+
+    <main>
+      <!-- INHALT -->
+
+
+
+    <!-- INHALT ENDE -->
+    </main>
+    
+    <footer class="footer-distributed">
+        <!-- FOOTER.html wird importiert -->
+        <div id="footer"></div> 
+    </footer>
+  </body>
+</html>
+
