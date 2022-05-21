@@ -107,6 +107,11 @@ section {
   vertical-align: top;
 }
 
+/* Darstellung der Texte */
+h1, h3 {
+  color: #6f8f36;
+}
+
 /* Footer left */
 
 .footer-distributed .footer-left{
