@@ -1,108 +1,33 @@
 <!DOCTYPE html>
 <html lang="de">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
-      crossorigin="anonymous"
-    />
-
-    <!-- Notwendig damit der Burger dargestellt wird -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-
+      <!-- HEAD und HEADER werden aus anderem File importiert -->
     <script
-      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      $(function () {
-        $(window).on("scroll", function () {
-          if ($(window).scrollTop() > 10) {
-            $(".navbar").addClass("active");
-          } else {
-            $(".navbar").removeClass("active");
-          }
-        });
-      });
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
     </script>
-    <title>Bodensee</title>
-    <link rel="icon" type="image/png" href="../img/icon.png" />
+    <script> 
+        $(function(){
+        $("#head").load("../html/html_tags/head.html"); 
+        $("#header").load("../html/html_tags/header.html"); 
+        $("#footer").load("../html/html_tags/footer.html"); 
+    });
+    </script>
+
+    <!-- HEAD.html wird importiert -->
+    <div id="head"></div>
   </head>
   <body>
+
     <header class="header">
-      <nav class="navbar navbar-expand-xl fixed-top py-3">
-        <div class="container">
-          <a class="navbar-brand" href="../html/index.html"><img class="navbar-brand" src="../img/Logo.png" alt="Logo" /></a>
-          <button
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-            class="navbar-toggler navbar-toggler-right">
-            <i class="fa fa-bars"></i>
-          </button>
-
-          <div id="navbarSupportedContent" class="collapse navbar-collapse">
-            <ul class="navbar-nav ml-auto">
-              
-              <li class="nav-item active">
-                <a href="../html/geschichte.html" class="nav-link font-weight-bold"
-                  >Geschichte <span class="sr-only">(current)</span></a>
-              </li>
-
-              <li class="nav-item dropdown">
-                <a class="nav-link font-weight-bold" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
-                  Unser Team
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="../html/unser_team_aerzte.html">Unsere Ärzte</a>
-                  <a class="dropdown-item" href="../html/unser_team_pflege.html">Unsere Pfleger</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a href="../html/ueber_uns.html" class="nav-link font-weight-bold"
-                  >Therapie</a>
-              </li>
-              <li class="nav-item">
-                <a href="../html/kontaktformular.html" class="nav-link font-weight-bold"
-                  >Termin Buchen</a>
-              </li>
-              <li class="nav-item">
-                <a href="../html/impressum.html" class="nav-link font-weight-bold"
-                  >Impressum</a>
-              </li>
-              <li class="nav-item">
-                <a href="../html/impressum.html" class="nav-link font-weight-bold"
-                  >Über Uns</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <div>
-        <div class="divmitte">
-          <h2>Bodensee Zentrum</h2>
-          <h2>Naturheilklinik Bodensee</h2>
-        </div>
+        <!-- HEADER.html wird importiert -->
+        <div id="header"></div>
     </header>
-    <main>
+
+    
       <!-- INHALT -->
+    <main>
       <div class="container">
         <div class="pt-5 text-white">
           <h1 class="display-4">Transparent Navbar</h1>
@@ -204,71 +129,8 @@
 
     </main>
     <footer class="footer-distributed">
-      <div class="footer-left">
-
-        <div class="map-responsive">
-
-          <iframe src="https://maps.google.com/maps?q=Seeblick%2012%20konstanz&t=&z=13&ie=UTF8&iwloc=&output=embed" width="200" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
-          
-        </div>
-        <p class="footer-company-name">Company Name © 2015</p>
-      </div>
-
-      <div class="footer-center">
-        <div>
-          <div>
-          <i class="fa fa-map-marker"></i>
-        </div>
-          <p>Seeblick 12 <span></span> 78467 Konstanz</p>
-        </div>
-
-        <div>
-          <div>
-          <i class="fa fa-phone"></i>
-        </div>
-          <p>Telefon: 0176/18742069 <span></span> Fax: 099/18742069-1</p>
-        </div>
-
-        <div>
-          <div>
-          <i class="fa fa-envelope"></i>
-        </div>
-          <p>
-            <a href="mailto:info@bodensee-zentrum.de"
-              >info@bodensee-zentrum.de</a>
-          </p>
-        </div>
-      </div>
-
-      <div class="footer-right">
-        <p class="footer-company-about">
-          <ul class="kontakt-footer">
-            <li><span>Öffnungszeiten:</span> </li>
-            <li>Mo 08.30 – 23.30 Uhr</li>
-            <li>Di 08.00 – 23.00 Uhr</li>
-            <li>Mi 08.00 – 23.30 Uhr</li>
-            <li>Do 08.00 – 23.00 Uhr</li>
-            <li>Fr 08.00 – 23.00 Uhr</li>
-            <li>Sa nach Vereinbarung</li>
-          </ul>
-            <ul class="kontakt-footer">
-            <li><span>Anbindung:</span> </li>
-            <li>99 kostenfreie Parkplätze
-              (vor der Klinik)</li>
-             <li> Bahnhof Konstanz
-              Fußweg ca. 7 Min.</li>
-              <li>Bahnhof Kreuzlingen
-              Fußweg ca. 20 Min.</li>
-          </ul>
-        </p>
-
-        <div class="footer-icons">
-          <a href="#"><i class="fa fa-facebook"></i></a>
-          <a href="#"><i class="fa fa-twitter"></i></a>
-          <a href="#"><i class="fa fa-linkedin"></i></a>
-          <a href="#"><i class="fa fa-github"></i></a>
-        </div>
-      </div>
+        <!-- FOOTER.html wird importiert -->
+        <div id="footer"></div> 
     </footer>
   </body>
 </html>
