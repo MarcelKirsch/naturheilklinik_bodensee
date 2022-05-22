@@ -423,10 +423,18 @@ h1, h3 {
   text-align: center;
 }
 
-.test1 {
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-padding: 2%;
+
+  @media (min-width: 1200px) {
+    .pflegediv {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 2%;
+  }
+}
+  @media (max-width: 1200px) {
+    .pflegediv{
+      padding: 2%;
+    }
 }
 
 .textklein{
