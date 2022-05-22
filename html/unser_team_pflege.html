@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="de">
   <head>
-      <!-- HEAD, HEADER und FOOTER werden aus anderem File importiert -->
+    <!-- HEAD, HEADER und FOOTER werden aus anderem File importiert -->
     <script
-        src="https://code.jquery.com/jquery-3.3.1.js"
-        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-        crossorigin="anonymous">
-    </script>
-    <script> 
-        $(function(){
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
         // IMPORT DER FILES
-        $("#head").load("../html/html_tags/head.html"); 
-        $("#header").load("../html/html_tags/header.html"); 
-        $("#footer").load("../html/html_tags/footer.html"); 
-    });
+        $("#head").load("../html/html_tags/head.html");
+        $("#header").load("../html/html_tags/header.html");
+        $("#footer").load("../html/html_tags/footer.html");
+      });
     </script>
 
     <!-- HEAD.html wird importiert -->
@@ -21,22 +21,48 @@
   </head>
 
   <body>
-
     <header class="header">
-        <!-- HEADER.html wird importiert -->
-        <div id="header"></div>
+      <!-- HEADER.html wird importiert -->
+      <div id="header"></div>
     </header>
 
     <main>
       <!-- INHALT -->
 
+      <div class="test1">
+        <div class="container_pflege">
+          <img src="../img/pfleger1.jpg" alt="Avatar" class="image_pflege" />
+          <div class="overlay_pflege">
+            <div class="text_pflege">
+              Markus Alonso
+              <p class="textklein">Stationsleitung in der Schulmedizin</p>
+            </div>
+          </div>
+        </div>
+        <div class="container_pflege">
+          <img src="../img/pfleger2.png" alt="Avatar" class="image_pflege" />
+          <div class="overlay_pflege">
+            <div class="text_pflege">
+              Nicole Lee
+              <p class="textklein">Stationsleitung in der Alternativmedizin</p>
+            </div>
+          </div>
+        </div>
+        <div class="container_pflege">
+          <img src="../img/pfleger3.png" alt="Avatar" class="image_pflege" />
+          <div class="overlay_pflege">
+            <div class="text_pflege">
+              Carmen Maguire
+              <p class="textklein">Pfelgeleitung in unserem Haus</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-
-    <!-- INHALT ENDE -->
+      <!-- INHALT ENDE -->
     </main>
-    
+
     <!-- FOOTER wird aus footer.html importiert -->
-    <div id="footer"></div> 
+    <div id="footer"></div>
   </body>
 </html>
-

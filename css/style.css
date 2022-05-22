@@ -330,7 +330,7 @@ h1, h3 {
 }
 
 /* Three columns side by side */
-.column {
+.column_arzt {
   float: left;
   width: 33.3%;
   margin-bottom: 16px;
@@ -339,34 +339,34 @@ h1, h3 {
 
 /* Display the columns below each other instead of side by side on small screens */
 @media screen and (max-width: 650px) {
-  .column {
+  .column_arzt {
     width: 100%;
     display: block;
   }
 }
 
 /* Add some shadows to create a card effect */
-.card {
+.card_arzt {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 /* Some left and right padding inside the container */
-.container {
+.container_arzt {
   padding: 0 16px;
 }
 
 /* Clear floats */
-.container::after, .row::after {
+.container_arzt::after, .row_arzt::after {
   content: "";
   clear: both;
   display: table;
 }
 
-.title {
+.title_arzt {
   color: grey;
 }
 
-.button {
+.button_arzt {
   border: none;
   outline: 0;
   display: inline-block;
@@ -378,6 +378,57 @@ h1, h3 {
   width: 100%;
 }
 
-.button:hover {
+.button_arzt:hover {
   background-color: #555;
+}
+
+.container_pflege {
+  position: relative;
+  width: 100%;
+}
+
+.image_pflege {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 2%;
+}
+
+.overlay_pflege {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #6f8f36;
+}
+
+.container_pflege:hover .overlay_pflege {
+  opacity: 1;
+}
+
+.text_pflege {
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.test1 {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+padding: 2%;
+}
+
+.textklein{
+  font-size: 15px;
 }
