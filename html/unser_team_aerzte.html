@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="de">
   <head>
-      <!-- HEAD, HEADER und FOOTER werden aus anderem File importiert -->
+    <!-- HEAD, HEADER und FOOTER werden aus anderem File importiert -->
     <script
-        src="https://code.jquery.com/jquery-3.3.1.js"
-        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-        crossorigin="anonymous">
-    </script>
-    <script> 
-        $(function(){
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
         // IMPORT DER FILES
-        $("#head").load("../html/html_tags/head.html"); 
-        $("#header").load("../html/html_tags/header.html"); 
-        $("#footer").load("../html/html_tags/footer.html"); 
-    });
+        $("#head").load("../html/html_tags/head.html");
+        $("#header").load("../html/html_tags/header.html");
+        $("#footer").load("../html/html_tags/footer.html");
+      });
     </script>
 
     <!-- HEAD.html wird importiert -->
@@ -21,22 +21,59 @@
   </head>
 
   <body>
-
     <header class="header">
-        <!-- HEADER.html wird importiert -->
-        <div id="header"></div>
+      <!-- HEADER.html wird importiert -->
+      <div id="header"></div>
     </header>
 
     <main>
       <!-- INHALT -->
 
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="img1.jpg" alt="Jane" style="width: 100%" />
+            <div class="container">
+              <h2>Jane Doe</h2>
+              <p class="title">CEO &amp; Founder</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>example@example.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
 
+        <div class="column">
+          <div class="card">
+            <img src="img2.jpg" alt="Mike" style="width: 100%" />
+            <div class="container">
+              <h2>Mike Ross</h2>
+              <p class="title">Art Director</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>example@example.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
 
-    <!-- INHALT ENDE -->
+        <div class="column">
+          <div class="card">
+            <img src="img3.jpg" alt="John" style="width: 100%" />
+            <div class="container">
+              <h2>John Doe</h2>
+              <p class="title">Designer</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>example@example.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- INHALT ENDE -->
     </main>
-    
+
     <!-- FOOTER wird aus footer.html importiert -->
-    <div id="footer"></div> 
+    <div id="footer"></div>
   </body>
 </html>
-
