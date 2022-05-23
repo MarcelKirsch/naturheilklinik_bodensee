@@ -462,7 +462,7 @@ h3 {
     width: 450px;
     height: 450px;
     float: right;
-    margin: 200px 200px 0px 0px;
+    margin: 200px 15% 0px 0px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
 
@@ -478,7 +478,7 @@ h3 {
     width: 450px;
     height: 450px;
     float: left;
-    margin: 200px 0px 0px 200px;
+    margin: 200px 0px 0px 15%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
 
