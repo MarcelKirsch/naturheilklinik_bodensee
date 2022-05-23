@@ -569,6 +569,9 @@ h3 {
   .card-img-top {
     background-color: #6f8f36 !important;
     width: auto !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .card-body h2 {
