@@ -627,4 +627,11 @@ h3 {
     text-align: center !important;
     color: #C4C4C4;
   }
+
+  .container_card {
+    margin: 10px;
+    margin-bottom: 25px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
 }
