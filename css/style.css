@@ -1,9 +1,14 @@
 main {
   background-color: #D8D8D8;
   color: #222;
+}
 
+footer {
+  margin-top: 20px;
+}
 
-
+body {
+  background-color: #D8D8D8 !important;
 }
 
 .navbar {
@@ -460,7 +465,7 @@ h3 {
   .div_rechts {
     background-color: #C4C4C4;
     width: 450px;
-    height: 450px;
+    height: 470px;
     float: right;
     margin: 200px 15% 0px 0px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -477,7 +482,7 @@ h3 {
   .div_links {
     background-color: #C4C4C4;
     width: 450px;
-    height: 450px;
+    height: 470px;
     float: left;
     margin: 200px 0px 0px 15%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -486,6 +491,7 @@ h3 {
   .index_texteh2 {
     color: #6f8f36;
     text-align: center;
+    margin-top: 15px;
   }
 
   .p_center {
@@ -551,10 +557,12 @@ h3 {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
 
   .card {
     border: none !important;
+
   }
 
   .card-body,
