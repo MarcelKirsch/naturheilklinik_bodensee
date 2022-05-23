@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="de">
   <head>
-      <!-- HEAD, HEADER und FOOTER werden aus anderem File importiert -->
+    <!-- HEAD, HEADER und FOOTER werden aus anderem File importiert -->
     <script
-        src="https://code.jquery.com/jquery-3.3.1.js"
-        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-        crossorigin="anonymous">
-    </script>
-    <script> 
-        $(function(){
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
         // IMPORT DER FILES
-        $("#head").load("../html/html_tags/head.html"); 
-        $("#header").load("../html/html_tags/header.html"); 
-        $("#footer").load("../html/html_tags/footer.html"); 
-    });
+        $("#head").load("../html/html_tags/head.html");
+        $("#header").load("../html/html_tags/header.html");
+        $("#footer").load("../html/html_tags/footer.html");
+      });
     </script>
 
     <!-- HEAD.html wird importiert -->
@@ -21,67 +21,87 @@
   </head>
 
   <body>
-
     <header class="header">
-        <!-- HEADER.html wird importiert -->
-        <div id="header"></div>
+      <!-- HEADER.html wird importiert -->
+      <div id="header"></div>
     </header>
 
     <main>
       <!-- INHALT -->
       <div class="container">
         <div class="row">
-          <div class="col">
-            <p>Das Bodensee Zentrum ist ein erfolgreiches Familienunternehmen welches sich derzeit im Übergang zur vierten Generation befindet. Und doch wirkt 
-              der Geist der Gründergeneration unvermindert und lebendig fort. Diese besondere Paarung von Dynamik und Kontinuität erklärt sich aus dem, was wir 
-              tun und wie wir es tun. Es ist konservativ, weil es um die Bewahrung von Lebensfreude und Gesundheit geht. Es ist progressiv, weil wir tradiertes 
-              Wissen mit den Mitteln moderner Wissenschaft kombinieren und uns stetig weiter entwickeln. Und wir tun es voller Herzblut, weil es sinnvoll und 
-              schön ist, Menschen darin zu unterstützen, Verantwortung für ihre Gesundheit zu übernehmen.</p>
-              
-              <p>In der Naturheilklinik Bodensee sehen wir den Menschen stets in seiner Ganzheit, in seiner Einheit von Leib und Seele. Neben einer kompetenten medizinischen 
-                Versorgung bieten wir daher ein breites Angebot an physikalischen Therapien und Verfahren an.</p>
+          <div class="col text-center" style="margin-top: 20px">
+            <p>
+              Das Bodensee Zentrum ist ein erfolgreiches Familienunternehmen
+              welches sich derzeit im Übergang zur vierten Generation befindet.
+              Und doch wirkt der Geist der Gründergeneration unvermindert und
+              lebendig fort. Diese besondere Paarung von Dynamik und Kontinuität
+              erklärt sich aus dem, was wir tun und wie wir es tun. Es ist
+              konservativ, weil es um die Bewahrung von Lebensfreude und
+              Gesundheit geht. Es ist progressiv, weil wir tradiertes Wissen mit
+              den Mitteln moderner Wissenschaft kombinieren und uns stetig
+              weiter entwickeln. Und wir tun es voller Herzblut, weil es
+              sinnvoll und schön ist, Menschen darin zu unterstützen,
+              Verantwortung für ihre Gesundheit zu übernehmen.
+            </p>
 
+            <p>
+              In der Naturheilklinik Bodensee sehen wir den Menschen stets in
+              seiner Ganzheit, in seiner Einheit von Leib und Seele. Neben einer
+              kompetenten medizinischen Versorgung bieten wir daher ein breites
+              Angebot an physikalischen Therapien und Verfahren an.
+            </p>
           </div>
         </div>
+        <div class="container">
+          <table class="table table-hover text-center">
+            <thead style="background-color: #6f8f36; color: white">
+              <tr>
+                <th>Jahr</th>
+                <th>Bettenanzahl</th>
+                <th>Behandelte Patienten</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2007</td>
+                <td>187</td>
+                <td>1.604</td>
+              </tr>
+              <tr>
+                <td>2011</td>
+                <td>341</td>
+                <td>3.240</td>
+              </tr>
+              <tr>
+                <td>2013</td>
+                <td>420</td>
+                <td>5.713</td>
+              </tr>
+              <tr>
+                <td>2018</td>
+                <td>876</td>
+                <td>12.269</td>
+              </tr>
+              <tr>
+                <td>2020</td>
+                <td>1.404</td>
+                <td>9.254</td>
+              </tr>
+              <tr>
+                <td>2022</td>
+                <td>1.887</td>
+                <td>18.769</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
 
-
-      <table class="table table-hover table-responsive table-light">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-
-    <!-- INHALT ENDE -->
+      <!-- INHALT ENDE -->
     </main>
 
     <!-- FOOTER.html wird importiert -->
-    <div id="footer"></div> 
+    <div id="footer"></div>
   </body>
 </html>
