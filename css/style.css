@@ -323,18 +323,18 @@ h3 {
   position: absolute;
 
 }
-
-.divmitte {
-  position: relative;
-  margin: auto;
-  width: 40%;
-  padding: 10px;
-  background-color: #6f8f36;
-  color: #ffffff;
-  text-align: center;
-  top: 725px;
-  box-shadow: -20px -20px 0 0 rgb(52 58 64 / 20%);
-
+@media screen and (min-width: 500px) {
+  .divmitte {
+    position: relative;
+    margin: auto;
+    width: 380px;
+    padding: 10px;
+    background-color: #6f8f36;
+    color: #ffffff;
+    text-align: center;
+    top: 725px;
+    box-shadow: -20px -20px 0 0 rgb(52 58 64 / 20%);
+  }
 }
 
 /* Three columns side by side */
