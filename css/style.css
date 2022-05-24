@@ -650,3 +650,8 @@ h3 {
 .row_card {
   margin-top: 10px;
 }
+
+.table tbody tr:hover td,
+.table tbody tr:hover th {
+  background-color: #6f8f36;
+}
