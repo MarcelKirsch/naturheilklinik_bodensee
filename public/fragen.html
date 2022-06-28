@@ -75,31 +75,11 @@
                     <div class="frage" id="Frage4">
                         <p class="Frage" id="Frage4">Wie wichtig ist Ihnen eine Behandlung nach den Prinzipien
                             der Naturheilkunde?</p>
-                        
+                        <div>
+                            <input type="range" id="Bewertung" min="0" max="6" name="bewertung" step="1" list="list">
+                        </div>
                         <div class="div2 form-group"><input type="button" class="btn btn-primary jabtn" id="f1ja"
-                                value="Ja" onclick="zuFrage5ja()"></div>
-                        <div class="div2 form-group"><input type="button" class="btn btn-primary neinbtn" id="f1nein"
-                                value="Nein" onclick="zuFrage5nein()"></div>
-                        <div>
-                            <input type="range" id="Bewertung" min="0" max="10" name="Kopf" step="1" list="list">
-                        </div>
-
-                        <!-- <div>
-                            <label for="Brust">Naturheilkunde</label>
-                            <input type="range" id="Brust" min="0" max="10" name="Brust" list="list">
-                        </div>
-                        <div>
-                            <label for="Bauch">Pflanzenheilkunde</label>
-                            <input type="range" id="Bauch" min="0" max="10" name="Bauch" list="list">
-                        </div>
-                        <div>
-                            <label for="Ruecken">Ajuveda</label>
-                            <input type="range" id="Ruecken" min="0" max="10" name="Ruecken" list="list">
-                        </div>
-                        <div>
-                            <label for="obereExtremitaet">Manuelle Therapie</label>
-                            <input type="range" id="obereExtremitaet" min="0" max="10" name="obereExtremitaet" list="list">
-                        </div> -->
+                                value="Weiter" onclick="zuFrage5()"></div>
                     </div>
 
                     <div class="frage" id="Frage5">

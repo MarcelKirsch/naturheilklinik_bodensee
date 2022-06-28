@@ -26,17 +26,6 @@ function zuFrage2nein() {
     document.getElementById("Frage2").style.display = "unset";
 }
 
-// function zuFrage3() {
-//     let Kopf = document.getElementById("Kopf").value;
-//     let Brust = document.getElementById("Brust").value;
-//     let Bauch = document.getElementById("Bauch").value;
-//     let Ruecken = document.getElementById("Ruecken").value;
-//     let obereExtremitaet = document.getElementById("obereExtremitaet").value;
-//     schulmedizin = schulmedizin + (Kopf * 2) + (Brust * 3) + (Bauch * 2) + (Ruecken * 1) + (obereExtremitaet * 1);
-//     document.getElementById("Frage2").style.display = "none";
-//     document.getElementById("Frage3").style.display = "unset";
-// }
-
 function zuFrage3ja() {
     schulmedizin += 20;
     naturheilkunde += 10;
@@ -67,48 +56,37 @@ function zuFrage4nein() {
     document.getElementById("Frage4").style.display = "unset";
 }
 
-function zuFrage5ja() {
-    // if (document.querySelector("#Laehmung").checked) {
+function zuFrage5() {
 
-    //     schulmedizin = schulmedizin + 30;
-    // }
+    let bewertung = document.getElementById("Bewertung").value;
 
-    // if (document.querySelector("#Sprechstoerung").checked) {
-    //     schulmedizin = schulmedizin + 10;
-    // }
-    // if (document.querySelector("#Erbrechen").checked) {
-    //     schulmedizin = schulmedizin + 5;
-    // }
-    // if (document.querySelector("#Atemnot").checked) {
-    //     schulmedizin = schulmedizin + 30;
-    // }
-    // if (document.querySelector("#kraempfe").checked) {
-    //     schulmedizin = schulmedizin + 5;
-    // }
-    // if (document.querySelector("#bewusstsein").checked) {
-    //     schulmedizin = schulmedizin + 10;
-    // }
-    // if (document.querySelector("#nichts").checked) {
-    //     schulmedizin = schulmedizin + 0;
-    // }
-    // if (document.querySelector("#Laehmung").checked) {
-    //     schulmedizin = schulmedizin + 30;
-    // }
+    //Schulmedizin
+    if (bewertung == 0) {
+        pflanzenheilkunde -= 20;
+        naturheilkunde -= 30;
+        schulmedizin += 20;
+    } else if (bewertung == 1) {
+        pflanzenheilkunde -= 10;
+        naturheilkunde -= 20;
+        schulmedizin += 10;  
+    }
 
-    //Möchte Naturheilkunde
-    pflanzenheilkunde += 20;
-    naturheilkunde += 30;
-    schulmedizin -= 20;
+    //Naturheilkunde
+    if (bewertung == 5) {
+        pflanzenheilkunde += 10;
+        naturheilkunde += 20;
+        schulmedizin -= 10;
+    } else if (bewertung == 6) {
+        pflanzenheilkunde += 20;
+        naturheilkunde += 30;
+        schulmedizin -= 20;
+    }
 
     document.getElementById("Frage4").style.display = "none";
     document.getElementById("Frage5").style.display = "unset";
 }
 
 function zuFrage5nein() {
-    //Keine Naturheilkunde
-    pflanzenheilkunde -= 20;
-    naturheilkunde -= 30;
-    schulmedizin += 20;
 
     document.getElementById("Frage4").style.display = "none";
     document.getElementById("Frage5").style.display = "unset";
@@ -116,17 +94,6 @@ function zuFrage5nein() {
 
 //akupunktur
 function zuFrage6ja() {
-    // let fieber = document.querySelector("#fieber").value;
-
-    // if (fieber < 36.5) {
-    //     schulmedizin = schulmedizin + 5;
-    // } else if (36.5 < fieber && fieber < 37.5) {
-    //     schulmedizin = schulmedizin;
-    // } else if (37.5 < fieber && fieber < 39) {
-    //     schulmedizin = schulmedizin + 5;
-    // } else {
-    //     schulmedizin = schulmedizin + 10;
-    // }
     naturheilkunde += 10;
     pflanzenheilkunde += 10;
 
@@ -278,17 +245,7 @@ function auswertungNein() {
 }
 
 function ergebnis() {
-    document.getElementById("ergebnissatz").innerHTML = "Selbstest fertig";
-    
-    // if (schulmedizin < 40) {
-    //     document.getElementById("ergebnissatz").innerHTML = "Bitte melden Sie sich bei ihrem Hausarzt oder dem ärztlichen Notdienst";
-    // }
-    // else if (schulmedizin > 40 && schulmedizin < 80) {
-    //     document.getElementById("ergebnissatz").innerHTML = "Sie sollten sich umgehend auf den Weg in unsere Notaufnahme machen";
-    // }
-    // else {
-    //     document.getElementById("ergebnissatz").innerHTML = "Es besteht akute Lebensgefahr. Rufen sie umgehend die 112 an und lassen einen Krankenwagen kommen.";
-    // }
+    document.getElementById("ergebnissatz").innerHTML = "Selbstest beendet";
 
     if (schulmedizin >= 20) {
         document.getElementById("ergebnissatz").innerHTML += "Wir finden in der Schulmedizin eine Behandlung für Sie";
