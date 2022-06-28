@@ -216,58 +216,75 @@ function zuFrage14ja() {
 }
 
 function zuFrage14nein() {
-    ergebnis();
 
     document.getElementById("Frage13").style.display = "none";
-    document.getElementById("ergebnis").style.display = "unset";
+    document.getElementById("Frage14").style.display = "unset";
 }
+
+function zuFrage15ja() {
+    ajuveda += 20;
+
+    document.getElementById("Frage14").style.display = "none";
+    document.getElementById("Frage15").style.display = "unset";
+}
+
+function zuFrage15nein() {
+
+
+    document.getElementById("Frage14").style.display = "none";
+    document.getElementById("Frage15").style.display = "unset";
+}
+
 
 
 /*
 * Ergebnis
 */
-function auswertungJa() {
-    ajuveda += 20;
+function auswertung() {
+    
+    tcm +=  document.getElementById("tcm").value * 10;
+    naturheilkunde += document.getElementById("naturheilkunde").value * 10;
+    pflanzenheilkunde += document.getElementById("pflanzenheilkunde").value * 10;
+    ajuveda += document.getElementById("ajuveda").value * 10;
+    manuelleTherapie += document.getElementById("manuelleTherapie").value * 10;
+    
+    console.log(document.getElementById("tcm").value*10);
+    console.log(document.getElementById("naturheilkunde").value*10);
+    console.log(document.getElementById("pflanzenheilkunde").value*10);
+    console.log(document.getElementById("ajuveda").value*10);
+    console.log(document.getElementById("manuelleTherapie").value*10);
+
     ergebnis();
 
-    document.getElementById("Frage13").style.display = "none";
-    document.getElementById("Frage14").style.display = "none";
+    document.getElementById("Frage15").style.display = "none";
     document.getElementById("ergebnis").style.display = "unset";
 
-}
-
-function auswertungNein() {
-    ergebnis();
-
-    document.getElementById("Frage13").style.display = "none";
-    document.getElementById("Frage14").style.display = "none";
-    document.getElementById("ergebnis").style.display = "unset";
 }
 
 function ergebnis() {
     document.getElementById("ergebnissatz").innerHTML = "Selbstest beendet";
 
-    if (schulmedizin >= 20) {
+    if (schulmedizin >= 40) {
         document.getElementById("ergebnissatz").innerHTML += "Wir finden in der Schulmedizin eine Behandlung für Sie";
     }
 
-    if (manuelleTherapie >= 30) {
+    if (manuelleTherapie >= 40) {
         document.getElementById("ergebnissatz").innerHTML += "Manuelle Therapie";
     }
 
-    if (naturheilkunde >= 30) {
+    if (naturheilkunde >= 40) {
         document.getElementById("ergebnissatz").innerHTML += "Naturheilkunde";
     }
 
-    if (pflanzenheilkunde >= 30) {
+    if (pflanzenheilkunde >= 40) {
         document.getElementById("ergebnissatz").innerHTML += "Pflanzenheilkunde";
     }
 
-    if (tcm >= 30) {
+    if (tcm >= 40) {
         document.getElementById("ergebnissatz").innerHTML += "TCM";
     }
 
-    if (ajuveda >= 20) {
+    if (ajuveda >= 30) {
         document.getElementById("ergebnissatz").innerHTML += "Ajuveda";
     }
 }

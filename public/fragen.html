@@ -76,15 +76,16 @@
                         <p class="Frage" id="Frage4">Wie wichtig ist Ihnen eine Behandlung nach den Prinzipien
                             der Naturheilkunde?</p>
                         <div>
+                            <label for="vol">wenig wichtig</label>
                             <input type="range" id="Bewertung" min="0" max="6" name="bewertung" step="1" list="list">
+                            <label for="vol">sehr wichtig</label>
                         </div>
-                        <div class="div2 form-group"><input type="button" class="btn btn-primary jabtn" id="f1ja"
+                        <div class="div2"><input type="button" class="btn btn-primary jabtn" id="f1ja"
                                 value="Weiter" onclick="zuFrage5()"></div>
                     </div>
 
                     <div class="frage" id="Frage5">
-                        <p class="Frage" id="Frage5">Schätzen Sie eine gesunde Lebensart zur Erhaltung Ihrer Gesundheit?
-                        </p>
+                        <p class="Frage" id="Frage5">Schätzen Sie eine gesunde Lebensart zur Erhaltung Ihrer Gesundheit?</p>
                         <div class="div2 form-group"><input type="button" class="btn btn-primary jabtn" id="f1ja"
                                 value="Ja" onclick="zuFrage6ja()"></div>
                         <div class="div2 form-group"><input type="button" class="btn btn-primary neinbtn" id="f1nein"
@@ -137,12 +138,11 @@
                     </div>
 
                     <div class="frage" id="Frage11">
-                        <p class="Frage" id="Frage11">Falls Sie unter diversen körperlichen Schmerzen leiden: nehmen
-                            Sie dazu bereits Medikamente ein?</p>
+                        <p class="Frage" id="Frage11">Haben Sie schmerzen und nehmen dazu bereits Medikamente ein?</p>
                         <div class="div2 form-group"><input type="button" class="btn btn-primary jabtn" id="f1ja"
-                                value="Ja, ich nehme Medikamente ein" onclick="zuFrage12ja()"></div>
+                                value="Ja" onclick="zuFrage12ja()"></div>
                         <div class="div2 form-group"><input type="button" class="btn btn-primary neinbtn"
-                                id="f1nein" value="Nein, keine Medikamente / Schmerzen" onclick="zuFrage12nein()"></div>
+                                id="f1nein" value="Nein" onclick="zuFrage12nein()"></div>
                     </div>
 
                     <div class="frage" id="Frage12">
@@ -155,7 +155,7 @@
                     </div>
 
                     <div class="frage" id="Frage13">
-                        <p class="Frage" id="Frage13">Verspüren Sie in Ihrem Körper eine Art Ungleichgewicht?</p>
+                        <p class="Frage" id="Frage13">Verspüren Sie in Ihrem Körper ein energetisches Ungleichgewicht?</p>
                         <div class="div2 form-group"><input type="button" class="btn btn-primary jabtn" id="f1ja"
                                 value="Ja" onclick="zuFrage14ja()"></div>
                         <div class="div2 form-group"><input type="button" class="btn btn-primary neinbtn"
@@ -166,9 +166,39 @@
                         <p class="Frage" id="Frage14">Denken Sie, dass das Ungleichgewicht aus einer Disbalance Ihrer
                             inneren Energien stammt?</p>
                         <div class="div2 form-group"><input type="button" class="btn btn-primary jabtn" id="f1ja"
-                                value="Ja" onclick="auswertungJa()"></div>
+                                value="Ja" onclick="zuFrage15ja()"></div>
                         <div class="div2 form-group"><input type="button" class="btn btn-primary neinbtn"
-                                id="f1nein" value="Nein" onclick="auswertungNein()"></div>
+                                id="f1nein" value="Nein" onclick="zuFrage15nein()"></div>
+                    </div>
+
+                    <div class="frage" id="Frage15">
+                        <p class="Frage" id="Frage15">Wie bewerten Sie folgende alternativmedizinische Behandlungsmethoden?</p>
+                        <p style="font-style: italic">Von "sehr schlecht" - "neutral" - "sehr gut"</p>
+
+                        <div>
+                            <label for="tcm">Traditionelle Chinesische Medizin</label>
+                            <input type="range" id="tcm" min="-3" max="3" name="tcm" step="1" list="list">
+                        </div>
+                          
+                        <div>
+                            <label for="naturheilkunde">Naturheilkunde</label>
+                            <input type="range" id="naturheilkunde" min="-3" max="3" name="naturheilkunde" list="list">
+                        </div>
+                        <div>
+                            <label for="pflanzenheilkunde">Pflanzenheilkunde</label>
+                            <input type="range" id="pflanzenheilkunde" min="-3" max="3" name="pflanzenheilkunde" list="list">
+                        </div>
+                        <div>
+                            <label for="ajuveda">Ajuveda</label>
+                            <input type="range" id="ajuveda" min="-3" max="3" name="ajuveda" list="list">
+                        </div>
+                        <div>
+                            <label for="manuelleTherapie">Manuelle Therapie</label>
+                            <input type="range" id="manuelleTherapie" min="-3" max="3" name="manuelleTherapie" list="list">
+                        </div>
+
+                        <div class="div2 form-group"><input type="button" class="btn btn-primary neinbtn"
+                            id="f1nein" value="Abschicken" onclick="auswertung()"></div>
                     </div>
 
                         <div class="frage" id="ergebnis">
