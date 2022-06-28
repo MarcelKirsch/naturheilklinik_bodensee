@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <!-- HEAD und HEADER werden aus anderem File importiert -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $("#head").load("../html/html_tags/head.html");
+            $("#header").load("../html/html_tags/header.html");
+            $("#footer").load("../html/html_tags/footer.html");
+        });
+    </script>
+    <script language="javascript" type="text/javascript" src="../js/script.js"></script>
+
+    <!-- HEAD.html wird importiert -->
+    <div id="head"></div>
+    <title>Bodensee Zentrum</title>
+</head>
+
+<body>
+    <header class="header">
+        <!-- HEADER.html wird importiert -->
+        <div id="header"></div>
+    </header>
+
+    <main>
+        <div class="containerL">
+            <!--   Source: https://unsplash.com/photos/1c8sj2IO2I4 -->
+            <div class="container container_card">
+
+                <form>
+                    <div class="frage" id="start" style="display: unset;">
+                        <p class="Frage" id="uberschrift">Selbsttest zur Bestimmung der passenden Behandlung</p>
+                        <p id="erklaerung"> Sie sind auf unsere Klinik aufmerksam geworden und beschäftigen sich mit
+                            der Frage, in welcher Abteilung Sie eine möglichst passende Behandlung erhalten können?
+                            <br>
+                            Dazu bieten wir Ihnen einen einfachen Selbsttest an, der Ihnen Aufschluss darüber gibt,
+                            in welche Abteilung Sie passen.
+                            <br>
+                            <br>
+                        </p>
+                        <div class="div1 form-group"><input type="button" class="btn btn-primary" id="start"
+                                value="Selbsttest starten" onclick="zuFrage1()"></div>
+                    </div>
+
+                    <div class="frage" id="Frage1">
+                        <p class="Frage" id="Frage1"> Trifft eine der folgenden körperliche Beschwerden auf Sie zu?
+                            Muskelschmerzen,
+                            Rückenschmerzen, Gelenkschmerzen, Gliederschmerzen, Knieschmerzen o.Ä.?</p>
+                        <div class="div2 form-group "><input type="button" class="btn btn-primary jabtn" id="f1ja"
+                                value="Ja" onclick="zuFrage2ja()"></div>
+                        <div class="div2 form-group "><input type="button" class="btn btn-primary neinbtn" id="f1nein"
+                                value="Nein" onclick="zuFrage2nein()"></div>
+                    </div>
+
+                    <div class="frage" id="Frage2">
+                        <p class="Frage" id="Frage2">Haben Sie Beschwerden wie Durchfall, Übelkeit, Herzrasen,
+                            Husten, Atemnot, Bauchschmerzen, Erbrechen, Sodbrennen, o. Ä.?</p>
+                        <div class="div2 form-group "><input type="button" class="btn btn-primary jabtn" id="f1ja"
+                                value="Ja" onclick="zuFrage3ja()"></div>
+                        <div class="div2 form-group "><input type="button" class="btn btn-primary neinbtn" id="f1nein"
+                                value="Nein" onclick="zuFrage3nein()"></div>
+
+                    </div>
+
+                    <div class="frage" id="Frage3">
+                        <p class="Frage" id="Frage3">Ist Ihnen eine ganzheitliche Diagnose und Behandlung wichtig?</p>
+                        <div class="div2 form-group"><input type="button" class="btn btn-primary jabtn" id="f1ja"
+                                value="Ja" onclick="zuFrage4ja()"></div>
+                        <div class="div2 form-group"><input type="button" class="btn btn-primary neinbtn" id="f1nein"
+                                value="Nein" onclick="zuFrage4nein()"></div>
+                    </div>
+
+                    <div class="frage" id="Frage4">
+                        <p class="Frage" id="Frage4">Ist Ihnen eine Behandlung wichtig, die Aspekte der Naturheilkunde
+                            beachtet?</p>
+                        <div class="div2 form-group"><input type="button" class="btn btn-primary jabtn" id="f1ja"
+                                value="Ja" onclick="zuFrage5ja()"></div>
+                        <div class="div2 form-group"><input type="button" class="btn btn-primary neinbtn" id="f1nein"
+                                value="Nein" onclick="zuFrage5nein()"></div>
+
+                        <!-- <div id="kriterien">
+                            <div>
+
+                                <input type="checkbox" id="Laehmung" name="box">
+                                <label for="Laehmung">Lähmung</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" id="Sprechstoerung" name="box">
+                                <label for="Sprechstoerung">Sprechstörung</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" id="Erbrechen" name="box">
+                                <label for="Erbrechen">Erbrechen</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" id="Atemnot" name="box">
+                                <label for="Atemnot">Atemnot</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" id="kraempfe" name="box">
+                                <label for="kraempfe">anhaltende Krämpfe</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" id="bewusstsein" name="box">
+                                <label for="bewusstsein">eingeschränktes Bewusstsein</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" id="nichts" name="box">
+                                <label for="nichts">nichts davon</label>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+
+                        <div class="div1 form-group"><input type="button" class="btn btn-primary" id="f1ja"
+                                value="Weiter" onclick="zuFrage5()"></div> -->
+                    </div>
+
+                    <!-- <div class="frage" id="Frage5">
+                        <p class="Frage" id="Frage5">Frage 5: Wie hoch ist ihre Körpertemperatur? (in Grad Celsius)</p>
+                        <label for="fieber" style="width:100%">
+                            Ihre Körpertemperatur:
+                            <input id="fieber" type="number" step="0.1" min="34.0" max="42.0" placeholder="36.0"
+                                value="36.8">
+                            Grad Celsius</label>
+                        <br>
+                        <br>
+                        <br>
+                        <div class="div1 form-group"><input type="button" class="btn btn-primary" id="f1ja"
+                                value="Weiter" onclick="zuFrage6()"></div>
+                    </div> -->
+
+                    <div class="frage" id="Frage5">
+                        <p class="Frage" id="Frage5">Schätzen Sie eine gesunde Lebensart zur Erhaltung Ihrer Gesundheit?
+                        </p>
+                        <div class="div2 form-group"><input type="button" class="btn btn-primary jabtn" id="f1ja"
+                                value="Ja" onclick="zuFrage6ja()"></div>
+                        <div class="div2 form-group"><input type="button" class="btn btn-primary neinbtn" id="f1nein"
+                                value="Nein" onclick="zuFrage6nein()"></div>
+                    </div>
+
+                    <div class="frage" id="Frage6">
+                        <p class="Frage" id="Frage6">Ziehen Sie es in Erwägung eine Akupunktur zur Verbesserung
+                            Ihres Wohlbefindens durchzuführen?</p>
+                        <div class="div2 form-group"><input type="button" class="btn btn-primary jabtn" id="f1ja"
+                                value="Ja" onclick="zuFrage7ja()"></div>
+                        <div class="div2 form-group"><input type="button" class="btn btn-primary neinbtn"
+                                id="f1nein" value="Nein" onclick="zuFrage7nein()"></div>
+                    </div>
+
+                    <div class="frage" id="Frage7">
+                        <p class="Frage" id="Frage7">Legen Sie Wert darauf, dass bei der Behandlung die energetische
+                            Harmonie (Qi) des Körpers beachtet
+                            und ggfs. wiederhergestellt wird?</p>
+                        <div class="div2 form-group"><input type="button" class="btn btn-primary jabtn" id="f1ja"
+                                value="Ja" onclick="zuFrage8ja()"></div>
+                        <div class="div2 form-group"><input type="button" class="btn btn-primary neinbtn"
+                                id="f1nein" value="Nein" onclick="zuFrage8nein()"></div>
+                    </div>
+
+                    <div class="frage" id="Frage8">
+                        <p class="Frage" id="Frage8">Bevorzugen Sie eine Behandlung, die sich auf Pflanzenbasis und
+                            nicht pharmakologische Wirkstoffe stützt?</p>
+                        <div class="div2 form-group"><input type="button" class="btn btn-primary jabtn" id="f1ja"
+                                value="Ja" onclick="zuFrage9ja()"></div>
+                        <div class="div2 form-group"><input type="button" class="btn btn-primary neinbtn"
+                                id="f1nein" value="Nein" onclick="zuFrage9nein()"></div>
+                    </div>
+
+                    <div class="frage" id="Frage9">
+                        <p class="Frage" id="Frage9">Ist Ihnen wichtig, dass ein Gleichgewicht im Körper besteht?</p>
+                        <div class="div2 form-group"><input type="button" class="btn btn-primary jabtn" id="f1ja"
+                                value="Ja" onclick="zuFrage10ja()"></div>
+                        <div class="div2 form-group"><input type="button" class="btn btn-primary neinbtn"
+                                id="f1nein" value="Nein" onclick="zuFrage10nein()"></div>
+                    </div>
+
+                    <div class="frage" id="Frage10">
+                        <p class="Frage" id="Frage10">Ist Ihnen wichtig Lebensmittel zu verzehren, die ihren Körper und 
+                            Immunsystem unterstützen?</p>
+                        <div class="div2 form-group"><input type="button" class="btn btn-primary jabtn" id="f1ja"
+                                value="Ja" onclick="zuFrage11ja()"></div>
+                        <div class="div2 form-group"><input type="button" class="btn btn-primary neinbtn"
+                                id="f1nein" value="Nein" onclick="zuFrage11nein()"></div>
+                    </div>
+
+                    <div class="frage" id="Frage11">
+                        <p class="Frage" id="Frage11">Falls Sie unter diversen körperlichen Schmerzen leiden: nehmen
+                            Sie dazu bereits Medikamente ein?</p>
+                        <div class="div2 form-group"><input type="button" class="btn btn-primary jabtn" id="f1ja"
+                                value="Ja, ich nehme Medikamente ein" onclick="zuFrage12ja()"></div>
+                        <div class="div2 form-group"><input type="button" class="btn btn-primary neinbtn"
+                                id="f1nein" value="Nein, keine Medikamente / Schmerzen" onclick="zuFrage12nein()"></div>
+                    </div>
+
+                    <div class="frage" id="Frage12">
+                        <p class="Frage" id="Frage12">Sind Sie mit diesen Medikamenten zufrieden oder suchen sie
+                            nach einer Alternativen Behandlungsmethode?</p>
+                        <div class="div2 form-group"><input type="button" class="btn btn-primary jabtn" id="f1ja"
+                                value="Ja, zufrieden" onclick="zuFrage13ja()"></div>
+                        <div class="div2 form-group"><input type="button" class="btn btn-primary neinbtn"
+                                id="f1nein" value="Nein, suche Alternativen" onclick="zuFrage13nein()"></div>
+                    </div>
+
+                    <div class="frage" id="Frage13">
+                        <p class="Frage" id="Frage13">Verspüren Sie in Ihrem Körper eine Art Ungleichgewicht?</p>
+                        <div class="div2 form-group"><input type="button" class="btn btn-primary jabtn" id="f1ja"
+                                value="Ja" onclick="zuFrage14ja()"></div>
+                        <div class="div2 form-group"><input type="button" class="btn btn-primary neinbtn"
+                                id="f1nein" value="Nein" onclick="zuFrage14nein()"></div>
+                    </div>
+
+                    <div class="frage" id="Frage14">
+                        <p class="Frage" id="Frage14">Denken Sie, dass das Ungleichgewicht aus einer Disbalance Ihrer
+                            inneren Energien stammt?</p>
+                        <div class="div2 form-group"><input type="button" class="btn btn-primary jabtn" id="f1ja"
+                                value="Ja" onclick="auswertungJa()"></div>
+                        <div class="div2 form-group"><input type="button" class="btn btn-primary neinbtn"
+                                id="f1nein" value="Nein" onclick="auswertungNein()"></div>
+                    </div>
+
+                        <div class="frage" id="ergebnis">
+
+                            <p id="uberschrift"> Ihr Testergebnis:</p>
+                            <br>
+                            <p id="ergebnissatz" style="font-size: 120%;"></p>
+                            <div class="frage" style="text-align: left; margin-left: 10%; ">
+
+                                <h2 id="ergebnissatz"></h2>
+
+                            </div>
+                        </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footer"></div>
+    </footer>
+</body>
+
+</html>

@@ -661,3 +661,317 @@ h3 {
   height: 400px;
   border: 0;
 }
+
+
+.InfoLayer {
+  text-align: center;
+  padding-top: 200px;
+  font-size: 50px;
+  font-size: x-large;
+  font-family: Calibri, Arial, Helvetica, Sans-serif;
+  color: #4A6669;
+  width: max-content;
+
+}
+
+.textfield {
+  background: #D0F2EC;
+
+}
+
+.btn {
+  background-color: #6f8f36 !important;
+  border: none !important;
+  color: grey;
+  padding: 25px 40px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-variant-caps: all-petite-caps;
+  transition-duration: 0.4s;
+  margin-bottom: 50px;
+
+
+}
+
+label {
+  width: 20%;
+}
+
+.btn:hover {
+  background-color: #6f8f36;
+  border: none;
+  color: #DAFFF2;
+  padding: 25x 40px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-variant-caps: all-petite-caps;
+  transition-duration: 0.4s;
+  margin-bottom: 50px;
+
+
+
+  /*color: grey;
+  background-color:#95C7C1;
+  border: none;
+  margin: inherit;
+  padding: inherit;
+  text-align: left;
+  margin-bottom: 490%;
+  */
+}
+
+.jabtn {
+  margin-left: 76%
+}
+
+.neinbtn {
+  margin-left: 12%
+}
+
+.start {
+  margin-top: 150px;
+  margin-bottom: 5rem;
+  font-size: 19px;
+  text-align: center;
+}
+
+.Antwort {
+  width: 100%;
+  text-align: left;
+  color: #4F4F4F;
+  font-size: 18px;
+  font-weight: 100;
+  border-bottom: 1px solid #D9D9D9;
+  padding-left: 3%;
+  margin-bottom: 0px;
+  padding-bottom: 9px;
+
+}
+
+.Frage {
+  width: 100%;
+  text-align: center;
+  color: grey;
+  font-size: 20px;
+  padding-left: 3%;
+
+}
+
+#uberschrift {
+  color: #6f8f36;
+  font-size: 200%;
+  font-weight: 400;
+}
+
+.frage {
+  display: none;
+
+}
+
+/* .conWhite {
+  margin-bottom: 10%;
+  margin-top: 0%;
+} */
+
+a {
+  color: #6f8f36;
+}
+
+a :hover {
+  color: teal;
+}
+
+.form-group {
+
+  font-variant-caps: all-petite-caps;
+  font-weight: 400;
+  font-size: 22px;
+  color: #80D9CA;
+
+}
+
+#formButton {
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+#formButton:hover {
+  padding: 15px 32px;
+
+}
+
+#formButton:focus {
+  background-color: #6f8f36;
+
+}
+
+.frage {
+  width: 100%;
+  text-align: center;
+  color: #4F4F4F;
+  font-size: 18px;
+  font-weight: 100;
+
+  padding-left: 3%;
+  margin-bottom: 0px;
+  padding-bottom: 9px;
+
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 7rem;
+
+}
+
+#erklaerung {
+  font-size: 110%;
+}
+
+#Frage5 {
+  text-align: center;
+  margin-right: 55%;
+
+}
+
+#kriterien {
+  text-align: center;
+}
+
+#Frage5 {
+  width: 100%;
+}
+
+
+
+
+@media screen and (max-width:960px) {
+  #picture1 {
+    display: none;
+  }
+
+  .div3 {
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+    margin: 10px 1.5% 0 1.5%;
+    padding: 5px;
+  }
+
+  .a:hover {
+    color: rgb(141, 224, 220);
+  }
+
+}
+
+@media screen and (max-width:800px) {
+  #navsmall {
+    display: inline;
+  }
+
+  #navbig {
+    display: none;
+  }
+
+  .btn {
+    background-color: #6f8f36;
+    border: none;
+    color: grey;
+    padding: 25px 40px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-variant-caps: all-petite-caps;
+    transition-duration: 0.4s;
+    margin-bottom: 50px;
+    margin-left: 36%;
+
+  }
+
+  .Icon {
+    display: none;
+  }
+
+
+}
+
+@media screen and (min-width:800px) {
+
+  #navsmall {
+    display: none;
+  }
+
+  #navbig {
+    display: inline;
+  }
+
+}
+
+@media screen and (max-width:400px) {
+  #navsmall {
+    display: inline;
+  }
+
+  #navbig {
+    display: none;
+  }
+
+  .btn {
+    background-color: #6f8f36;
+    border: none;
+    color: grey;
+    padding: 25px 40px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-variant-caps: all-petite-caps;
+    transition-duration: 0.4s;
+    margin-bottom: 50px;
+    margin-left: 24%;
+
+  }
+
+  .Icon {
+    display: none;
+  }
+
+  h1 {
+    font-size: 38px;
+    color: #6f8f36;
+    font-variant-caps: all-petite-caps;
+    font-weight: 350;
+  }
+
+  label {
+    width: 55%;
+  }
+
+
+}
+
+.div2 {
+  display: inline-block;
+  vertical-align: top;
+  width: 47%;
+  margin: 0 1% 0 1%;
+  text-align: justify;
+}
+
+.div2Weiter {
+  display: inline-block;
+  vertical-align: top;
+  width: 47%;
+  margin: 59px -33% 73px 0%;
+  text-align: justify;
+}
+
+.centerButton {
+  width: 100%;
+  text-align: center;
+}
