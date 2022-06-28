@@ -27,7 +27,6 @@
 
     <main>
         <div class="containerL">
-            <!--   Source: https://unsplash.com/photos/1c8sj2IO2I4 -->
             <div class="container container_card">
 
                 <form>
@@ -74,70 +73,34 @@
                     </div>
 
                     <div class="frage" id="Frage4">
-                        <p class="Frage" id="Frage4">Ist Ihnen eine Behandlung wichtig, die Aspekte der Naturheilkunde
-                            beachtet?</p>
+                        <p class="Frage" id="Frage4">Wie wichtig ist Ihnen eine Behandlung nach den Prinzipien
+                            der Naturheilkunde?</p>
+                        
                         <div class="div2 form-group"><input type="button" class="btn btn-primary jabtn" id="f1ja"
                                 value="Ja" onclick="zuFrage5ja()"></div>
                         <div class="div2 form-group"><input type="button" class="btn btn-primary neinbtn" id="f1nein"
                                 value="Nein" onclick="zuFrage5nein()"></div>
-
-                        <!-- <div id="kriterien">
-                            <div>
-
-                                <input type="checkbox" id="Laehmung" name="box">
-                                <label for="Laehmung">Lähmung</label>
-                            </div>
-
-                            <div>
-                                <input type="checkbox" id="Sprechstoerung" name="box">
-                                <label for="Sprechstoerung">Sprechstörung</label>
-                            </div>
-
-                            <div>
-                                <input type="checkbox" id="Erbrechen" name="box">
-                                <label for="Erbrechen">Erbrechen</label>
-                            </div>
-
-                            <div>
-                                <input type="checkbox" id="Atemnot" name="box">
-                                <label for="Atemnot">Atemnot</label>
-                            </div>
-
-                            <div>
-                                <input type="checkbox" id="kraempfe" name="box">
-                                <label for="kraempfe">anhaltende Krämpfe</label>
-                            </div>
-
-                            <div>
-                                <input type="checkbox" id="bewusstsein" name="box">
-                                <label for="bewusstsein">eingeschränktes Bewusstsein</label>
-                            </div>
-
-                            <div>
-                                <input type="checkbox" id="nichts" name="box">
-                                <label for="nichts">nichts davon</label>
-                            </div>
+                        <div>
+                            <input type="range" id="Bewertung" min="0" max="10" name="Kopf" step="1" list="list">
                         </div>
-                        <br>
-                        <br>
 
-                        <div class="div1 form-group"><input type="button" class="btn btn-primary" id="f1ja"
-                                value="Weiter" onclick="zuFrage5()"></div> -->
+                        <!-- <div>
+                            <label for="Brust">Naturheilkunde</label>
+                            <input type="range" id="Brust" min="0" max="10" name="Brust" list="list">
+                        </div>
+                        <div>
+                            <label for="Bauch">Pflanzenheilkunde</label>
+                            <input type="range" id="Bauch" min="0" max="10" name="Bauch" list="list">
+                        </div>
+                        <div>
+                            <label for="Ruecken">Ajuveda</label>
+                            <input type="range" id="Ruecken" min="0" max="10" name="Ruecken" list="list">
+                        </div>
+                        <div>
+                            <label for="obereExtremitaet">Manuelle Therapie</label>
+                            <input type="range" id="obereExtremitaet" min="0" max="10" name="obereExtremitaet" list="list">
+                        </div> -->
                     </div>
-
-                    <!-- <div class="frage" id="Frage5">
-                        <p class="Frage" id="Frage5">Frage 5: Wie hoch ist ihre Körpertemperatur? (in Grad Celsius)</p>
-                        <label for="fieber" style="width:100%">
-                            Ihre Körpertemperatur:
-                            <input id="fieber" type="number" step="0.1" min="34.0" max="42.0" placeholder="36.0"
-                                value="36.8">
-                            Grad Celsius</label>
-                        <br>
-                        <br>
-                        <br>
-                        <div class="div1 form-group"><input type="button" class="btn btn-primary" id="f1ja"
-                                value="Weiter" onclick="zuFrage6()"></div>
-                    </div> -->
 
                     <div class="frage" id="Frage5">
                         <p class="Frage" id="Frage5">Schätzen Sie eine gesunde Lebensart zur Erhaltung Ihrer Gesundheit?
