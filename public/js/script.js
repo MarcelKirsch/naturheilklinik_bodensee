@@ -218,7 +218,7 @@ function zuFrage14ja() {
 function zuFrage14nein() {
 
     document.getElementById("Frage13").style.display = "none";
-    document.getElementById("Frage14").style.display = "unset";
+    document.getElementById("Frage15").style.display = "unset";
 }
 
 function zuFrage15ja() {
@@ -247,12 +247,6 @@ function auswertung() {
     pflanzenheilkunde += document.getElementById("pflanzenheilkunde").value * 10;
     ajuveda += document.getElementById("ajuveda").value * 10;
     manuelleTherapie += document.getElementById("manuelleTherapie").value * 10;
-    
-    console.log(document.getElementById("tcm").value*10);
-    console.log(document.getElementById("naturheilkunde").value*10);
-    console.log(document.getElementById("pflanzenheilkunde").value*10);
-    console.log(document.getElementById("ajuveda").value*10);
-    console.log(document.getElementById("manuelleTherapie").value*10);
 
     ergebnis();
 
@@ -262,29 +256,30 @@ function auswertung() {
 }
 
 function ergebnis() {
-    document.getElementById("ergebnissatz").innerHTML = "Selbstest beendet";
+    document.getElementById("ergebnissatz").innerHTML = "<h2>Folgende Abteilungen empfehlen wir Ihnen:<h2><br>";
 
     if (schulmedizin >= 40) {
-        document.getElementById("ergebnissatz").innerHTML += "Wir finden in der Schulmedizin eine Behandlung für Sie";
+        document.getElementById("ergebnissatz").innerHTML += "Schulmedizinisch<br>";
     }
 
     if (manuelleTherapie >= 40) {
-        document.getElementById("ergebnissatz").innerHTML += "Manuelle Therapie";
+        document.getElementById("ergebnissatz").innerHTML += "Manuelle Therapie<br>";
     }
 
     if (naturheilkunde >= 40) {
-        document.getElementById("ergebnissatz").innerHTML += "Naturheilkunde";
+        document.getElementById("ergebnissatz").innerHTML += "Naturheilkunde<br>";
     }
 
     if (pflanzenheilkunde >= 40) {
-        document.getElementById("ergebnissatz").innerHTML += "Pflanzenheilkunde";
+        document.getElementById("ergebnissatz").innerHTML += "Pflanzenheilkunde<br>";
     }
 
     if (tcm >= 40) {
-        document.getElementById("ergebnissatz").innerHTML += "TCM";
+        document.getElementById("ergebnissatz").innerHTML += "Traditionell Chinesische Medizin<br>";
     }
 
     if (ajuveda >= 30) {
-        document.getElementById("ergebnissatz").innerHTML += "Ajuveda";
+        document.getElementById("ergebnissatz").innerHTML += "Ajuveda<br>";
     }
+
 }
