@@ -256,30 +256,34 @@ function auswertung() {
 }
 
 function ergebnis() {
-    document.getElementById("ergebnissatz").innerHTML = "<h2>Folgende Abteilungen empfehlen wir Ihnen:<h2><br>";
+    document.getElementById("ergebnissatz").innerHTML = "<h2>Wir empfehlen Ihnen sich in folgenden Abteilungen zu melden:<h2><br>";
 
-    if (schulmedizin >= 40) {
+    if (schulmedizin >= 30) {
         document.getElementById("ergebnissatz").innerHTML += "Schulmedizinisch<br>";
     }
 
-    if (manuelleTherapie >= 40) {
+    if (manuelleTherapie >= 30) {
         document.getElementById("ergebnissatz").innerHTML += "Manuelle Therapie<br>";
     }
 
-    if (naturheilkunde >= 40) {
+    if (naturheilkunde >= 30) {
         document.getElementById("ergebnissatz").innerHTML += "Naturheilkunde<br>";
     }
 
-    if (pflanzenheilkunde >= 40) {
+    if (pflanzenheilkunde >= 30) {
         document.getElementById("ergebnissatz").innerHTML += "Pflanzenheilkunde<br>";
     }
 
-    if (tcm >= 40) {
+    if (tcm >= 30) {
         document.getElementById("ergebnissatz").innerHTML += "Traditionell Chinesische Medizin<br>";
     }
 
-    if (ajuveda >= 30) {
+    if (ajuveda >= 20) {
         document.getElementById("ergebnissatz").innerHTML += "Ajuveda<br>";
+    }
+
+    if (schulmedizin < 30 && manuelleTherapie < 30 && naturheilkunde < 30 && pflanzenheilkunde < 30 && tcm < 30 && ajuveda < 20) {
+        document.getElementById("ergebnissatz").innerHTML += "Keine, Sie scheinen gesund zu sein &#128077;<br>";
     }
 
 }
